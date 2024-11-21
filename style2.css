@@ -1,0 +1,115 @@
+/* css do home */
+
+
+body{
+    
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    background-color:  #F3F7F0 ;
+
+}
+
+.sidebar{
+    background-color: #011C27;
+    padding: 15px;
+    display: flex;
+    flex-direction:row;
+
+ 
+}
+
+nav ul li a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #FECEE9;
+}
+
+ul{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content:flex-end;
+    gap: 5%;
+    font-size: 18px;
+    padding-left: 60%;
+    
+}
+
+li{
+    list-style: none;
+    color: white;
+    
+}
+
+.logomenor{
+  height: 50px;
+  display: block;
+
+}
+
+
+/* Estilos do Slide */
+
+.carrosel-container {
+    position: relative;
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.slides {
+    display: flex;
+    overflow: hidden;
+}
+
+.slides img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+
+}
+
+
+button:hover {
+    background-color: #FECEE9;
+}
+
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #C2E812;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+
+/* rodapé */
+
+footer{
+    padding: 15px;
+    background: #C2E812 ;
+
+}
+
+p{
+    font-size: 16px;
+    color: #011C27;
+    text-align: center;
+}
+
