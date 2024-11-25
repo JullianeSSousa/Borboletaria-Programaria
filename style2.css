@@ -7,13 +7,14 @@ body{
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    background-color:  #F3F7F0 ;
+    background-color: #e7e7e7;
+
 
 }
 
 .sidebar{
     background-color: #011C27;
-    padding: 15px;
+    padding: 18px;
     display: flex;
     flex-direction:row;
 
@@ -21,8 +22,8 @@ body{
 }
 
 nav ul li a{
-    margin: 0 10px;
     text-decoration: none;
+    list-style: none;
     color: #FECEE9;
 }
 
@@ -33,13 +34,13 @@ ul{
     justify-content:flex-end;
     gap: 5%;
     font-size: 18px;
-    padding-left: 60%;
+    padding-left: 70%;
     
 }
 
 li{
     list-style: none;
-    color: white;
+    
     
 }
 
@@ -52,10 +53,17 @@ li{
 
 /* Estilos do Slide */
 
+
+.container{
+    background-color: #011C27;
+
+}
+
 .carrosel-container {
     position: relative;
     max-width: 100%;
     margin-top: 10px;
+    
 }
 
 .slides {
@@ -98,17 +106,183 @@ button {
 }
 
 
+/* sobre */
+
+
+
+.sobre{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap ;
+    background-color:#ffffff;
+   
+
+}
+
+
+h1{
+    margin-top: 15%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    position: relative;
+    font-size: 34px;
+    color: #870058;
+}
+
+.informações{
+    text-align: justify;
+    font-size: 24px;
+    margin-top: 5%;
+    margin-left: 10%;
+    color: #011C27;
+    
+    
+}
+
+
+.fundadora{
+    display: flex;
+    max-height: 750px;
+    box-shadow: 15px 15px 10px rgb(212, 212, 212); /* blur de 10px e deslocamento à direita de 15px. */
+
+    
+    
+
+}
+
+
+
+/* Acervo*/
+
+.acervo{
+
+    font-size: 34px;
+    color: #870058;
+}
+
+.acervo-container{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color:#C2E812;
+    position: relative;
+    padding: 24px;
+}
+
+.acervo-cards{
+    display: flex;
+    gap: 16.2px;
+    transition: transform 0.6s ease;
+}
+
+.card{
+    position: relative;
+    margin-left: 13px;
+    width: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0. 0. 0.3) ;
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.autores-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0. 0. 0.4);
+}
+
+.autores-card h2{
+    margin-top: 80%;
+    font-size: 18px;
+    color:#d0ff00;
+}
+
+.autores-card strong{
+    margin-bottom: 15%;
+    font-size: 14px;
+    color:#FECEE9;
+}
+
+.card:hover img{
+    filter: grayscale(0%);
+}
+
+/* Reservas */
+.reservas{
+    display: flex;
+    justify-content:column;
+    padding: 15px;
+
+}
+
+.reservas
+
+/* Planner */
+
+.planer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap ;
+    
+}
+
+.botaoplanner{
+    display: flex;
+    justify-content:column;
+    flex-direction: row;
+    margin-left: 50%;
+    margin-right: 40%;
+    margin-bottom: 10%;
+    
+}
+
+.texto{
+    font-size: 24px;
+    margin-left: 10%;
+    text-align: left;
+}
+strong{
+    font-size: 24px;
+    color:#870058;
+}
+
+.link_planner{
+    display: flex;
+    max-width: 500px;
+    position: relative;
+}
+
+
+
 
 /* rodapé */
 
 footer{
-    padding: 15px;
+
+    padding: 25px;
     background: #C2E812 ;
 
 }
 
-p{
+.desenvolvedora{
     font-size: 16px;
+    font-weight: 700;
     color: #011C27;
     text-align: center;
 }
