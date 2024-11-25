@@ -8,8 +8,8 @@ function moveSlide(step) {
 
     currentIndex = (currentIndex + step + totalSlides) % totalSlides;
     
-    const carousel = document.querySelector('.slides');
-    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    const carroselContainer = document.querySelector('.slides');
+    carroselContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
 
 
     // Muda de slide a cada 3 segundos
