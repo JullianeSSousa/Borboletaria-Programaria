@@ -1,19 +1,37 @@
-// O efeito da foto passar para o lado não funciona!!
 
-let currentIndex = 0;
+// Seleciona os elementos principais
+const prevButton = document.querySelector('.arrow.prev');
+const nextButton = document.querySelector('.arrow.next');
+const cardsContainer = document.querySelector('.acervo-container');
 
-function moveSlide(step) {
-    const slides = document.querySelectorAll('.slides img');
-    const totalSlides = slides.length;
+// Define a largura de cada cartão (ajuste se necessário)
+const cardWidth = 200; // Altere conforme o tamanho do cartão no CSS
+const scrollAmount = cardWidth + 16; // Inclua a margem/padding se houver
 
-    currentIndex = (currentIndex + step + totalSlides) % totalSlides;
-    
-    const carroselContainer = document.querySelector('.slides');
-    carroselContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+// Função para rolar para a esquerda
+prevButton.addEventListener('click', () => {
+    cardsContainer.scrollBy({
+        left: -scrollAmount, // Rolar para a esquerda
+        behavior: 'smooth' // Animação suave
+    });
+});
 
+// Função para rolar para a direita
+nextButton.addEventListener('click', () => {
+    cardsContainer.scrollBy({
+        left: scrollAmount, // Rolar para a direita
+        behavior: 'smooth' // Animação suave
+    });
+});
 
-    // Muda de slide a cada 3 segundos
-// Muda de slide a cada 3 segundossetInterval(() => {
-   // Muda de slide a cada 3 segundos moveSlide(-1);
-// Muda de slide a cada 3 segundos}, 6000); } // Muda de slide a cada 3 segundo
-}
+// Opção extra: Desativar os botões se não for possível rolar mais
+const updateArrows = () => {
+    const maxScrollLeft = cardsContainer.scrollWidth - cardsContainer.clientWidth;
+
+    prevButton.disabled = cardsContainer.scrollLeft <= 0;
+    nextButton.disabled = cardsContainer.scrollLeft >= maxScrollLeft;
+};
+
+// Atualiza os botões ao carregar a página e após rolar
+cardsContainer.addEventListener('scroll', updateArrows);
+window.addEventListener('load', updateArrows);

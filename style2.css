@@ -131,6 +131,7 @@ h1{
 }
 
 .informações{
+
     text-align: justify;
     font-size: 24px;
     margin-top: 5%;
@@ -174,6 +175,9 @@ h1{
     display: flex;
     gap: 16.2px;
     transition: transform 0.6s ease;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
 }
 
 .card{
@@ -223,14 +227,42 @@ h1{
 }
 
 /* Reservas */
-.reservas{
-    display: flex;
-    justify-content:column;
+.container-reservas{
+    display:flex;
+    flex-direction:column;
+    position: relative;
     padding: 15px;
+
 
 }
 
-.reservas
+.reservas button {
+    align-items: center;
+    font-size: 35px;
+    display: flex;
+    justify-content: column-reverse;
+    position: relative;
+    margin-top: 8%;
+    margin-left: 50%;
+    width: 500px;
+    height: 90px;
+    padding: 1.6rem;
+    border-radius: 25px;
+    
+}
+
+.teste{
+    margin-left: 30%;
+    color:#870058;
+}
+
+.informações_reservas{
+    text-align: justify;
+    font-size: 24px;
+    margin-left: 10%;
+    color: #011C27;
+    
+}
 
 /* Planner */
 

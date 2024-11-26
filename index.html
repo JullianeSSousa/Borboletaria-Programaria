@@ -4,37 +4,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="ico/favicon.ico-01.ico" type="simbolo">
+    <link rel="shortcut icon" href="ico/favicon.ico-01.ico" type="image/x-icon">
     <title>Borboletária</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Meow+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Meow+Script&display=swap"
+        rel="stylesheet">
+    
 </head>
 
 <body>
-    <!-- Pagina inicial da biblioteca -->
+    <header>
+        <!-- Menu de Navegação -->
+        <nav class="sidebar">
+            <img src="assets/LogoHorizontal-01.png" alt="logo menu" class="logomenor">
+
+            <ul>
+
+                <li><a href="#acervo">Acervo</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#planner">Planner</a></li>
+                <li><a href="#termo">Termo</a></li>
+                <li><a href="contatos">Contatos</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
     <main>
-        <div class="apresentacao">
-            
-            <img src="assets/MONOGRAMA-04.png" alt="logo">
+        <section class="container">
+            <!-- Slide abaixo do menu que passe as imagens automaticamente -->
+            <div class="carrosel-container">
+                <div class="slides">
+                    <img src="assets/2.jpg" alt="imagem 1">
+                    <img src="assets/3.jpg" alt="imagem 2">
+                    <img src="assets/5.jpg" alt="imagem 3">
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
 
-            <p>Os livros me salvaram nos dias em que minha alma enfrentava as piores tempestades. <br><strong>Tempestades do sul, Brittainy C. Cherry</strong></p>
+
+
+        <section>
+            <h1 id="acervo" class="acervo">Acervo</h1>
+            <!-- miniatura de livros com a categoria -->
+
+            <div class="acervo-container">
+                <button class="arrow prev">←</button>
 
 
 
-            <h1>Bem-vindo(a)!</h1>
-            <h2>Primeiro desejamos conhecer você, como você se chama?</h2>
-            <input type="text">
-            <button><a href="home.html">Enviar</a></button> <!-- ao digitar o nome será redirecionado para a homer e abrirá uma janela de pop-up com mensagem de boas vidas e nome do usuário -->
+                <div class="acervo-cards">
 
-        </div>
+                    <div class="card">
+                        <img src="assets/coleen.jpg" alt="autora">
 
+                        <div class="autores-card">
+                            <h2>Colleen Hoover </h2>
+                            <strong>Escritora norte-americana</strong>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/Alex-Michaelides.jpg" alt="autora">
+
+                        <div class="autores-card">
+                            <h2>Alex Michaelides </h2>
+                            <strong>Autor britânico-cipriota</strong>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/Brittainy Cherry.jpg" alt="autora">
+
+                        <div class="autores-card">
+                            <h2>Brittainy C. Cherry </h2>
+                            <strong>Escritora norte-americana</strong>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/Carina Rissi.jpg" alt="autora">
+
+                        <div class="autores-card">
+                            <h2>Carina Rissi</h2>
+                            <strong>Escritora brasileira </strong>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/jojo-moyes.jpg" alt="autora">
+
+                        <div class="autores-card">
+                            <h2>Jojo Moyes</h2>
+                            <strong>Escritora britânica </strong>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/lauren kate.jpg" alt="autora">
+
+                        <div class="autores-card">
+                            <h2>Lauren Kate</h2>
+                            <strong> Escritora norte-americana </strong>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/judith mcnaught.jpg" alt="autora">
+
+                        <div class="autores-card">
+                            <h2>Judith McNaught</h2>
+                            <strong> Escritora norte-americana </strong>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/lucy score.jpg" alt="autora">
+
+                        <div class="autores-card">
+                            <h2>Lucy Score</h2>
+                            <strong> Escritora</strong>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <button class="arrow next">→</button>
+            </div>
+
+
+
+        </section>
+
+        <section class="info">
+            <h1 id="sobre">Sobre Nós</h1>
+
+            <div class="sobre">
+
+                <p class="informações"> A Borboletária surgiu a partir de uma biblioteca pessoal da autoria do projeto.
+                    <br>
+                    O nome do projeto surgiu a partir da paixão da fundadora por borboletas e livros.<br> Com um nome
+                    que
+                    evoca a leveza e a transformação, como as borboletas que <br> emergem de seu casulo, causam a
+                    sensação
+                    de liberdade que o mundo dos livros <br> proporciona. Nosso objetivo é tornar o acesso aos livros
+                    algo
+                    acessível e democratico.
+                    <br><br>
+                    Para mim os livros são importantes para nos acolher e teletransportamos para
+                    <br>lugares distantes. Os livros me resgataram em momentos que meu coração e <br>minha mente
+                    precisavam
+                    estar em outros lugares. A leitura é capaz de fazer uma <br> mente criativa trabalhar durante horas
+                    em
+                    desfechos e sonhos literários por horas a fio… <br><br>
+
+                    Acredito que o acesso à leitura é uma ferramenta poderosa para a transformação
+                    social. <br>Assim como as borboletas realizam sua metamorfose, os livros permitem essa evolução,
+                    <br>
+                    educação, construção de um espaço sociável. Acreditamos com a visão de que cada livro <br>
+                    emprestado,
+                    cada história compartilhada e cada momento de aprendizado representa <br>um passo na construção de
+                    uma
+                    comunidade mais informada, criativa e unida.
+
+                </p>
+
+                <!--   <p class="informações">Para mim os livros são importantes para nos acolher e teletransportamos para
+                    <br>lugares distantes. Os livros me resgataram em momentos que meu coração e <br>minha mente
+                    precisavam
+                    estar em outros lugares. A leitura é capaz de fazer uma <br> mente criativa trabalhar durante horas
+                    em
+                    desfechos e sonhos literários por horas a fio…
+                </p>
+
+
+                <p class="informações">Acredito que o acesso à leitura é uma ferramenta poderosa para a transformação
+                    social. <br>Assim como as borboletas realizam sua metamorfose, os livros permitem essa evolução,
+                    <br>
+                    educação, construção de um espaço sociável. Acreditamos com a visão de que cada livro <br>
+                    emprestado,
+                    cada história compartilhada e cada momento de aprendizado representa <br>um passo na construção de
+                    uma
+                    comunidade mais informada, criativa e unida.-->
+
+                </p>
+                <img src="assets/Fundadora.png" alt="JullianeSSousa" class="fundadora">
+
+            </div>
+
+
+            <!--  <img src="assets/Fundadora.png" alt="JullianeSSousa"> -->
+
+
+        </section>
+
+
+        <section class="container-reservas">
+            <h1 id="reservas">Reservas</h1>
+
+            <div class="reservas">
+  
+
+                <p class="informações_reservas"> Se você desejar conhecer um pouco mais dos livros que temos vocês, podem entrar
+                    em contato através do nosso instagram para saber como pode realizar um empréstimo:
+                </p>
+
+                <button><a href="https://www.instagram.com/borb_oletaliteraria/" target="_blank"
+                        style="text-decoration: none;" class="teste"> Borboletária</a></button>
+                        
+
+            </div>
+
+
+
+        </section>
+
+        <section class="planner">
+            <h1 id="planner">Planner</h1>
+
+            <div class="texto_planner">
+
+                <p class="texto">Mergulhar no universo da literatura é sempre uma experiência única e quando conseguimos
+                    nos lembrar de um detalhe importante de um livro, melhor ainda. <br>
+                    Por isso pensamos em um planner para que você possa registrar suas leituras e avalia-las, deixando
+                    registrado cada leitura que você fizer. Você pode usa-lo no modelo<br>
+                    impresso ou digital de acordo como desejar.</p>
+                <p class="texto">Para ter acesso ao seu planner de leitura gratuito, clique na <strong>Borboleta
+                    </strong>a baixo:</p>
+            </div>
+
+            <!-- link ou um pdf com um planner para ser impresso -->
+            <div class="botaoplanner">
+                <a href="planner.html" style="text-decoration: none;" target="_blank"><img src="assets/11473284.png"
+                        alt="link para o planner" class="link_planner"></a>
+            </div>
+        </section>
+
+
+        <section>
+            <h1 id="termo">Termo</h1>
+
+        </section>
+     
+
+
+
+
+       
+        <!-- js-->
 
     </main>
 
-
+    <footer>
+        <p class="desenvolvedora">@Desenvolvido por JullianeSSousa, 2024</p>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
-<footer>
-    <p>2024. Site desenvolvido por @JullianeSSousa</p>
-</footer>
 
 </html>
