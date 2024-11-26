@@ -16,9 +16,7 @@
         <!-- Menu de Navegação -->
         <nav class="sidebar">
             <img src="assets/LogoHorizontal-01.png" alt="logo menu" class="logomenor">
-
             <ul>
-
                 <li><a href="#acervo">Acervo</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#reservas">Reservas</a></li>
@@ -32,16 +30,16 @@
     </header>
     <main>
         <section class="container">
-        <!-- Slide abaixo do menu que passe as imagens automaticamente -->
-        <div class="carrosel-container">
-            <div class="slides">
-                <img src="assets/2.jpg" alt="imagem 1">
-                <img src="assets/3.jpg" alt="imagem 2">
-                <img src="assets/5.jpg" alt="imagem 3">
+            <!-- Slide abaixo do menu que passe as imagens automaticamente -->
+            <div class="carrosel-container">
+                <div class="slides">
+                    <img src="assets/2.jpg" alt="imagem 1" class="image">
+                    <img src="assets/3.jpg" alt="imagem 2" class="image">
+                    <img src="assets/5.jpg" alt="imagem 3" class="image">
+                </div>
+                <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="next" onclick="plusSlides(1)">&#10095;</button>
             </div>
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
-        </div>
         </section>
 
 
@@ -51,14 +49,13 @@
             <!-- miniatura de livros com a categoria -->
 
             <div class="acervo-container">
-                <button class="arrow prev">←</button>
-
+                <button class="arrow prev" onclick="prevAuthors()">←</button>
 
 
                 <div class="acervo-cards">
 
                     <div class="card">
-                        <img src="assets/coleen.jpg" alt="autora">
+                        <img src="assets/coleen.jpg" alt="autora" class="authors">
 
                         <div class="autores-card">
                             <h2>Colleen Hoover </h2>
@@ -70,7 +67,7 @@
                     </div>
 
                     <div class="card">
-                        <img src="assets/Alex-Michaelides.jpg" alt="autora">
+                        <img src="assets/Alex-Michaelides.jpg" alt="autora" class="authors">
 
                         <div class="autores-card">
                             <h2>Alex Michaelides </h2>
@@ -82,7 +79,7 @@
                     </div>
 
                     <div class="card">
-                        <img src="assets/Brittainy Cherry.jpg" alt="autora">
+                        <img src="assets/Brittainy Cherry.jpg" alt="autora" class="authors">
 
                         <div class="autores-card">
                             <h2>Brittainy C. Cherry </h2>
@@ -94,7 +91,7 @@
                     </div>
 
                     <div class="card">
-                        <img src="assets/Carina Rissi.jpg" alt="autora">
+                        <img src="assets/Carina Rissi.jpg" alt="autora" class="authors">
 
                         <div class="autores-card">
                             <h2>Carina Rissi</h2>
@@ -106,7 +103,7 @@
                     </div>
 
                     <div class="card">
-                        <img src="assets/jojo-moyes.jpg" alt="autora">
+                        <img src="assets/jojo-moyes.jpg" alt="autora" class="authors">
 
                         <div class="autores-card">
                             <h2>Jojo Moyes</h2>
@@ -118,7 +115,7 @@
                     </div>
 
                     <div class="card">
-                        <img src="assets/lauren kate.jpg" alt="autora">
+                        <img src="assets/lauren kate.jpg" alt="autora" class="authors">
 
                         <div class="autores-card">
                             <h2>Lauren Kate</h2>
@@ -130,33 +127,53 @@
                     </div>
 
                     <div class="card">
-                        <img src="assets/judith mcnaught.jpg" alt="autora">
+                        <img src="assets/judith mcnaught.jpg" alt="autora" class="authors">
 
                         <div class="autores-card">
                             <h2>Judith McNaught</h2>
                             <strong> Escritora norte-americana </strong>
-
                         </div>
-
-
                     </div>
 
                     <div class="card">
-                        <img src="assets/lucy score.jpg" alt="autora">
+                        <img src="assets/lucy score.jpg" alt="autora" class="authors">
 
                         <div class="autores-card">
                             <h2>Lucy Score</h2>
                             <strong> Escritora</strong>
-
                         </div>
-
-
                     </div>
+                    <div class="card">
+                        <img src="assets/lucy score.jpg" alt="autora" class="authors">
+
+                        <div class="autores-card">
+                            <h2>Lucy Score</h2>
+                            <strong> Escritora</strong>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/lucy score.jpg" alt="autora" class="authors">
+
+                        <div class="autores-card">
+                            <h2>Lucy Score</h2>
+                            <strong> Escritora</strong>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/lucy score.jpg" alt="autora" class="authors">
+
+                        <div class="autores-card">
+                            <h2>Lucy Score</h2>
+                            <strong> Escritora</strong>
+                        </div>
+                    </div>
+                    
+
 
 
                 </div>
 
-                <button class="arrow next">→</button>
+                <button class="arrow next" onclick="nextAuthors()">→</button>
             </div>
 
 
@@ -196,7 +213,7 @@
 
                 </p>
 
-             <!--   <p class="informações">Para mim os livros são importantes para nos acolher e teletransportamos para
+                <!--   <p class="informações">Para mim os livros são importantes para nos acolher e teletransportamos para
                     <br>lugares distantes. Os livros me resgataram em momentos que meu coração e <br>minha mente
                     precisavam
                     estar em outros lugares. A leitura é capaz de fazer uma <br> mente criativa trabalhar durante horas
@@ -216,12 +233,12 @@
 
                 </p>
                 <img src="assets/Fundadora.png" alt="JullianeSSousa" class="fundadora">
-  
+
             </div>
 
 
-              <!--  <img src="assets/Fundadora.png" alt="JullianeSSousa"> -->
-         
+            <!--  <img src="assets/Fundadora.png" alt="JullianeSSousa"> -->
+
 
         </section>
 
@@ -230,10 +247,12 @@
             <h1 id="reservas">Reservas</h1>
             <div class="reservas">
 
-            <p class="informações"> Se você desejar conhecer um pouco mais dos livros que temos vocês, podem entrar em contato através do nosso instagram para saber como pode realizar um empréstimo:
-            </p>
+                <p class="informações"> Se você desejar conhecer um pouco mais dos livros que temos vocês, podem entrar
+                    em contato através do nosso instagram para saber como pode realizar um empréstimo:
+                </p>
 
-            <button><a href="https://www.instagram.com/borb_oletaliteraria/" target="_blank" style="text-decoration: none;" class="teste"> Borboletária</a></button>
+                <button><a href="https://www.instagram.com/borb_oletaliteraria/" target="_blank"
+                        style="text-decoration: none;" class="teste"> Borboletária</a></button>
             </div>
 
 
@@ -242,15 +261,19 @@
         <section class="planner">
             <h1 id="planner">Planner</h1>
             <div class="texto_planner">
-                <p class="texto">Mergulhar no universo da literatura é sempre uma experiência única e quando conseguimos nos lembrar de um detalhe importante de um livro, melhor ainda. <br>
-                 Por isso pensamos em um planner para que você possa registrar suas leituras e avalia-las, deixando registrado cada leitura que você fizer. Você pode usa-lo no modelo<br> 
-                 impresso ou digital de acordo como desejar.</p>
-            <p class="texto">Para ter acesso ao seu planner de leitura gratuito, clique na <strong>Borboleta </strong>a baixo:</p>
+                <p class="texto">Mergulhar no universo da literatura é sempre uma experiência única e quando conseguimos
+                    nos lembrar de um detalhe importante de um livro, melhor ainda. <br>
+                    Por isso pensamos em um planner para que você possa registrar suas leituras e avalia-las, deixando
+                    registrado cada leitura que você fizer. Você pode usa-lo no modelo<br>
+                    impresso ou digital de acordo como desejar.</p>
+                <p class="texto">Para ter acesso ao seu planner de leitura gratuito, clique na <strong>Borboleta
+                    </strong>a baixo:</p>
             </div>
-            
+
             <!-- link ou um pdf com um planner para ser impresso -->
-             <div  class="botaoplanner">
-             <a href="planner.html" style="text-decoration: none;"  target="_blank"><img src="assets/11473284.png" alt="link para o planner" class="link_planner"></a>
+            <div class="botaoplanner">
+                <a href="planner.html" style="text-decoration: none;" target="_blank"><img src="assets/11473284.png"
+                        alt="link para o planner" class="link_planner"></a>
             </div>
         </section>
 
@@ -267,14 +290,14 @@
     </main>
 
     <footer>
-       <p class="desenvolvedora">@Desenvolvido por JullianeSSousa, 2024</p> 
+        <p class="desenvolvedora">@Desenvolvido por JullianeSSousa, 2024</p>
     </footer>
 </body>
 
-    </main>
+</main>
 
-   
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 
 </html>
