@@ -89,6 +89,7 @@ var items = document.querySelectorAll('.acervo-cards .card'); // Seleciona todos
 // Função para mostrar os itens do carousel
 function showAuthors() {
     // Oculta todos os itens
+    
     items.forEach((item, index) => {
         if (index >= currentIndex && index < currentIndex + itemsPerSlide) {
             item.style.display = "block"; // Exibe o item dentro da faixa de itens a serem mostrados
@@ -114,17 +115,21 @@ function showAuthors() {
 
 // Função para avançar os itens
 function nextAuthors() {
-    if (currentIndex + itemsPerSlide < items.length) {
-        currentIndex += itemsPerSlide; // Avança pelo número de itens por vez
-    }
+    currentIndex = (currentIndex + 1) % items.length; // Avança para o próximo item e reinicia no início
+
+    // if (currentIndex + itemsPerSlide < items.length) {
+    //     currentIndex += itemsPerSlide; // Avança pelo número de itens por vez
+    // }
     showAuthors(); // Atualiza a exibição dos itens
 }
 
 // Função para voltar os itens
 function prevAuthors() {
-    if (currentIndex - itemsPerSlide >= 0) {
-        currentIndex -= itemsPerSlide; // Retrocede pelo número de itens por vez
-    }
+    currentIndex = (currentIndex - 1 + items.length) % items.length; // Retrocede e reinicia no final
+
+    // if (currentIndex - itemsPerSlide >= 0) {
+    //     currentIndex -= itemsPerSlide; // Retrocede pelo número de itens por vez
+    // }
     showAuthors(); // Atualiza a exibição dos itens
 }
 
