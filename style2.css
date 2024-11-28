@@ -1,5 +1,11 @@
 /* css do home */
 
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
 
 body{
     
@@ -14,7 +20,9 @@ body{
 
 .sidebar{
     background-color: #011C27;
-    padding: 18px;
+    padding: 2% -5% 0% 15% ;
+    gap: 3px;
+    padding: 2%;
     display: flex;
     flex-direction:row;
 
@@ -22,30 +30,34 @@ body{
 }
 
 nav ul li a{
+    padding: 2%;
     text-decoration: none;
     list-style: none;
     color: #FECEE9;
 }
 
 ul{
+
     display: flex;
     flex-direction:row;
     flex-wrap: nowrap;
     justify-content:flex-end;
     gap: 5%;
     font-size: 18px;
-    padding-left: 70%;
+    margin-top: 1rem;
+    padding-left: 55%;
     
 }
 
 li{
+    font-size: 20px;
     list-style: none;
     
     
 }
 
 .logomenor{
-  height: 50px;
+  height: 60px;
   display: block;
 
 }
@@ -59,11 +71,14 @@ li{
 
 }
 
+
 .carrosel-container {
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove paddings */
+    box-sizing: border-box;
     position: relative;
     max-width: 100%;
-    margin-top: 10px;
-    
+
 }
 
 .slides {
@@ -72,9 +87,11 @@ li{
 }
 
 .slides img {
+    position: relative;
     width: 100%;
     max-width: 100%;
-    display: block;
+    display: block; 
+    margin: 0;
 
 }
 
@@ -123,7 +140,8 @@ button {
 
 h1{
     margin-top: 15%;
-    margin-bottom: 3%;
+    max-height:  800px;
+    margin-bottom: 5%;
     margin-left: 10%;
     position: relative;
     font-size: 34px;
@@ -135,6 +153,7 @@ h1{
     text-align: justify;
     font-size: 24px;
     margin-top: 5%;
+
     margin-left: 10%;
     color: #011C27;
     
@@ -243,7 +262,7 @@ h1{
     justify-content: column-reverse;
     position: relative;
     margin-top: 8%;
-    margin-left: 50%;
+    margin-left: 40%;
     width: 500px;
     height: 90px;
     padding: 1.6rem;
@@ -253,7 +272,7 @@ h1{
 
 .teste{
     color: #870058;
-   margin-left: 30%;
+    margin-left: 30%;
    
    
 }
@@ -280,7 +299,7 @@ h1{
     display: flex;
     justify-content:column;
     flex-direction: row;
-    margin-left: 50%;
+    margin-left: 40%;
     margin-right: 40%;
     margin-bottom: 10%;
     
@@ -302,7 +321,36 @@ strong{
     position: relative;
 }
 
+/* Termos */
 
+.informações_termos{
+    text-align: justify;
+    font-size: 24px;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 8%;
+    color: #011C27;
+    
+}
+
+ ol{
+    list-style-type: square;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 3%;
+    
+    color: #870058;
+ }
+.termos{
+    list-style-type: lower-alpha;
+    flex-direction:column;
+    font-size: 24px;
+    padding: 6px;
+    margin-left: 15%;
+   
+
+    
+}
 
 
 /* rodapé */
@@ -311,7 +359,20 @@ footer{
 
     padding: 25px;
     background: #C2E812 ;
+    display: flex;
+    gap: 2%;
+    flex-direction:row;
+    flex-wrap: nowrap ;
+    
 
+}
+
+
+.instaicon{
+    width: 60px;
+    display: flex;
+    align-items: center;
+    
 }
 
 .desenvolvedora{
@@ -319,5 +380,8 @@ footer{
     font-weight: 700;
     color: #011C27;
     text-align: center;
+    margin-top: 1%;
+    margin-left: 45%;
+
 }
 
