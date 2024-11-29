@@ -7,13 +7,18 @@
 }
 
 
+
 body{
-    
+    background-color: rgba(0, 0, 0, 0.50);
     font-family: "Dosis", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    background-color: #e7e7e7;
+    background-image: url(assets/curvy-narrow-muddy-road-dark-forest-surrounded-by-greenery-little-light-coming-from.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+
 
 
 }
@@ -105,7 +110,7 @@ button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #C2E812;
+    background-color:#870058;
     color: white;
     border: none;
     padding: 10px;
@@ -132,7 +137,9 @@ button {
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap ;
-    background-color:#ffffff;
+    background-color: rgba(1, 28, 39, 0.80);
+    
+
    
 
 }
@@ -145,7 +152,7 @@ h1{
     margin-left: 10%;
     position: relative;
     font-size: 34px;
-    color: #870058;
+    color: #C2E812;
 }
 
 .informações{
@@ -153,9 +160,8 @@ h1{
     text-align: justify;
     font-size: 24px;
     margin-top: 5%;
-
     margin-left: 10%;
-    color: #011C27;
+    color:  #FECEE9;
     
     
 }
@@ -164,7 +170,7 @@ h1{
 .fundadora{
     display: flex;
     max-height: 750px;
-    box-shadow: 15px 15px 10px rgb(212, 212, 212); /* blur de 10px e deslocamento à direita de 15px. */
+
 
     
     
@@ -177,22 +183,22 @@ h1{
 
 .acervo{
 
-    font-size: 34px;
-    color: #870058;
+    font-size: 40px;
+    color: #C2E812 ;
 }
 
 .acervo-container{
     display: flex;
     align-items: center;
     overflow: hidden;
-    background-color:#C2E812;
+    background-color: rgba(194, 232, 18, 0.80);
     position: relative;
-    padding: 24px;
+    padding: 40px;
 }
 
 .acervo-cards{
     display: flex;
-    gap: 17.5px;
+    gap: 15px;
     transition: transform 0.6s ease;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -201,7 +207,7 @@ h1{
 
 .card{
     position: relative;
-    margin-left: 14px;
+    margin-left: 13px;
     width: 200px;
     border-radius: 8px;
     overflow: hidden;
@@ -210,7 +216,7 @@ h1{
 
 .card img{
     width: 100%;
-    height: 250px;
+    height: 350px;
     object-fit: cover;
     filter: grayscale(100%);
 }
@@ -230,19 +236,19 @@ h1{
 }
 
 .autores-card h2{
-    margin-top: 80%;
+    margin-top: 85%;
     font-size: 18px;
     color:#d0ff00;
 }
 
 .autores-card strong{
-    margin-bottom: 15%;
-    font-size: 14px;
+    margin-bottom: 10%;
+    font-size: 15px;
     color:#FECEE9;
 }
 
 .card:hover img{
-    filter: grayscale(0%);
+    filter: grayscale(-50%);
 }
 
 /* Reservas */
@@ -255,7 +261,7 @@ h1{
 
 }
 
-.reservas button {
+.reservasbutton {
     align-items: center;
     font-size: 35px;
     display: flex;
@@ -267,11 +273,14 @@ h1{
     height: 90px;
     padding: 1.6rem;
     border-radius: 25px;
+    background-color: #870058;
+    
+
     
 }
 
 .teste{
-    color: #870058;
+    color:#d0ff00;
     margin-left: 30%;
    
    
@@ -309,10 +318,11 @@ h1{
     font-size: 24px;
     margin-left: 10%;
     text-align: left;
+    color: #FECEE9;
 }
 strong{
     font-size: 24px;
-    color:#870058;
+    color:#d0ff00;
 }
 
 .link_planner{
@@ -326,10 +336,10 @@ strong{
 .informações_termos{
     text-align: justify;
     font-size: 24px;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 10%;
-    margin-bottom: 8%;
-    color: #011C27;
+    margin-bottom: 3%;
+    color:#FECEE9;
     
 }
 
@@ -337,9 +347,14 @@ strong{
     list-style-type: square;
     font-size: 24px;
     font-weight: 800;
-    margin-bottom: 3%;
-    
-    color: #870058;
+    margin-bottom: 6%;   
+    color:#C2E812;
+ }
+
+ .termo{
+
+    padding: 0.50%;
+
  }
 .termos{
     list-style-type: lower-alpha;
@@ -358,7 +373,7 @@ strong{
 footer{
 
     padding: 25px;
-    background: #C2E812 ;
+    background:#011C27 ;
     display: flex;
     gap: 2%;
     flex-direction:row;
@@ -378,7 +393,7 @@ footer{
 .desenvolvedora{
     font-size: 16px;
     font-weight: 700;
-    color: #011C27;
+    color:#C2E812;
     text-align: center;
     margin-top: 1%;
     margin-left: 45%;
