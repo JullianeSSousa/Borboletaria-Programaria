@@ -170,6 +170,7 @@ h1{
 .fundadora{
     display: flex;
     max-height: 750px;
+    float: left;
 
 
     
@@ -190,6 +191,7 @@ h1{
 .acervo-container{
     display: flex;
     align-items: center;
+    
     overflow: hidden;
     background-color: rgba(194, 232, 18, 0.80);
     position: relative;
@@ -211,12 +213,13 @@ h1{
     width: 200px;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0. 0. 0.3) ;
+    box-shadow: 0 4px 6px rgba(0, 0. 0. 0.50) ;
 }
 
 .card img{
     width: 100%;
     height: 350px;
+    float: left;
     object-fit: cover;
     filter: grayscale(100%);
 }
@@ -304,15 +307,19 @@ h1{
     
 }
 
+
 .botaoplanner{
     display: flex;
     justify-content:column;
     flex-direction: row;
+    float: left;
     margin-left: 40%;
     margin-right: 40%;
     margin-bottom: 10%;
     
 }
+
+
 
 .texto{
     font-size: 24px;
