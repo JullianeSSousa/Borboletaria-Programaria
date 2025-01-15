@@ -435,15 +435,48 @@ footer{
     }
 
     .reservasbutton {
-        margin: 10px auto;
-        width: 80%;
+        font-size: 18px;
+        width: auto;
+        margin: 20px auto;
     }
 
     .botaoplanner {
         margin: 20px auto;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .link_planner {
+        max-width: 300px;
+    }
+
+    .fundadora {
+        max-width: 100%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .slides img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .desenvolvedora {
+        margin: 10px 0;
+    }
+
+    .instaicon {
+        width: 40px;
+        margin: 10px 0;
     }
 }
+
 
 /* Médias telas: tablets */
 @media screen and (max-width: 768px) {
